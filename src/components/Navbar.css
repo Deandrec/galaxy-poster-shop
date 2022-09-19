@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -1.5rem;
 }
 
 #nav-title{
@@ -13,6 +14,9 @@
     font-size: 35px;
     font-weight: 700;
     margin-left: 1rem;
+}
+#nav-title:hover{
+    cursor: pointer;
 }
 
 /* links container */
@@ -33,5 +37,6 @@
 
 #link:hover{
     letter-spacing: 0.25rem;
+    cursor: pointer;
 }
 /* end links container */

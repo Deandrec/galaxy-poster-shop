@@ -3,10 +3,10 @@ import HomePage from "./components/HomePage";
 import ShopPage from "./components/ShopPage";
 import Cart from "./components/Cart";
 import Navbar from "./components/Navbar";
+import './RouteSwitcher.css'
 const RouteSwitcher = ()=>{
     return(
-        <div>
-            
+        <div className="route-switcher">
         <BrowserRouter>
             <Navbar/>
             <Routes>
