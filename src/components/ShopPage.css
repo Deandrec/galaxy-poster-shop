@@ -1,8 +1,76 @@
+/* background */
+.shop-page{
+    background-color: pink;
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+}
+/* end background */
+/* shop title */
+.shop-title-contianer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop-title{
+    height: 4rem;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    text-decoration: underline;
+    text-decoration-color: #555;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    
+}
+/* end shop title */
+/* card-container */
+.shop-inventory{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* end card-container */
+
+/* card */
+.card{
+    display: flex;
+    margin: 10px 10px 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.3s;
+    
+}
+.card:hover{
+    transform: scale(1.03);
+    margin-bottom: 10px;
+}
 .card-image{
-    background-image: url(../images/shop-images/earth.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100px;
-    height:  280px;
+    width: 280px;
+    height:  60vh;
 }
+
+.card-item{
+    background-color: #ccc;
+    padding: 2px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card-price{
+    font-weight: 700;
+}
+.add-btn{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* end card */
