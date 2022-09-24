@@ -35,7 +35,7 @@ const ShopPage = ()=>{
             setCartItems({
                 itemsInCart : [...cartItems.itemsInCart, obj],
                 totalCount: cartItems.totalCount + 1,
-                totalPrice: cartItems.totalPrice + obj.price
+                totalPrice: (Number(cartItems.totalPrice) + obj.price).toFixed(2)
             })
         }else{
             let updatedList = cartItems.itemsInCart.map(element =>{
@@ -49,7 +49,7 @@ const ShopPage = ()=>{
             setCartItems({
                 itemsInCart : updatedList,
                 totalCount: cartItems.totalCount + 1,
-                totalPrice: cartItems.totalPrice + itemInList.price
+                totalPrice: (Number(cartItems.totalPrice) + itemInList.price).toFixed(2)
             })
 
         }
