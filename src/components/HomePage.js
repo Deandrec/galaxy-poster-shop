@@ -5,10 +5,16 @@ const HomePage = ()=>{
 
     return(
         <div className="homepage" >
-            <h1 id="homepage-title">Milk The Way</h1>
-            <p id="homepage-quote">Explore the galaxy beyond the earth</p>
+            <div className="homepage-container">
+                <div className="homepage-words">
+                    <h1 id="homepage-title">Milk The Way</h1>
+                    <p id="homepage-quote">"Explore the galaxy beyond the Earth"</p>
+                </div>
+                
+                
+                <Link to="/shop"><button className="homepage-to-shop-btn">Shop Now</button></Link>
+            </div>
             
-            <Link to="/shop">shop now</Link>
             
         </div>
     )

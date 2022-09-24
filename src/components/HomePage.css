@@ -1,9 +1,53 @@
 .homepage{
-    background-image: url(../images/homepage/starry-night-purple.jpg);
+    background-image: url(../images/homepage/starry-night-blue.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     width: 100%;
-    height: 95.2vh;
+    height: 95vh;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.homepage-container #homepage-title{
+    background: #000;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+.homepage-container #homepage-quote{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3em;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.homepage-words{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.homepage-to-shop-btn{
+    width: 20rem;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    margin-top: 2rem;
+
 }
