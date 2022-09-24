@@ -22,13 +22,14 @@ const ShopPage = ()=>{
         const item = inventory.find(item => item.name === id)
         // check if item is in cartItems
         let itemInList = cartItems.itemsInCart.find(element => element.name === item.name)
-        let updatedList = null;
+
         if(itemInList === undefined){
             let obj = {
                 name: item.name,
                 img: item.img,
                 price: item.price,
-                qty: 1
+                qty: 1,
+                itemType: item.itemType,
             }
             
             setCartItems({
