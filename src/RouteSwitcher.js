@@ -9,9 +9,9 @@ const RouteSwitcher = ()=>{
     const [cartItems, setCartItems] = useState({itemsInCart: [], totalCount: 0, totalPrice: 0.00})
     return(
         <div className="route-switcher">
-        <BrowserRouter>
-            <Navbar/>
+        <BrowserRouter>            
             <ShopCartContext.Provider value = {{cartItems, setCartItems}}>
+            <Navbar/>
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                     <Route path="/shop" element={<ShopPage/>}/>
