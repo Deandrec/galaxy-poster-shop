@@ -8,7 +8,7 @@ const HomePage = ()=>{
             <div className="homepage-container">
                 <div className="homepage-words">
                     <h1 id="homepage-title">Milk The Way</h1>
-                    <p id="homepage-quote">"Explore the galaxy beyond the Earth"</p>
+                    <p id="homepage-quote" data-testid='homepage-quote'>"Explore the galaxy beyond the Earth"</p>
                 </div>
                 
                 

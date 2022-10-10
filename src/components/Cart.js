@@ -20,7 +20,7 @@ const Cart = ()=>{
         setCartItems({
             itemsInCart : updatedList,
             totalCount: cartItems.totalCount + 1,
-            totalPrice: (Number(cartItems.totalPrice) + itemPrice).toFixed(2)
+            totalPrice: (Number(cartItems.totalPrice) + Number(itemPrice)).toFixed(2)
         })
     }
 
@@ -73,7 +73,7 @@ const Cart = ()=>{
                 <h1 className='cart-title'>Your Cart</h1>
                 {cartItems.itemsInCart.map((item) =>{
                     return(
-                        <div className='cart-item'>
+                        <div className='cart-item' data-testid='cart-item'>
                             <img src={item.img} alt='planet poster'/>
                             <div className='info'>
                                 <div className='upper-wrapper'>
@@ -85,7 +85,7 @@ const Cart = ()=>{
                                 </div>
                                 <div className='qty-wrapper'>
                                     <button className='cart-item-btn' id={item.name} onClick={decrement}>-</button>
-                                    <div id='qty'>{item.qty}</div>
+                                    <div id='qty' data-testid='qty'>{item.qty}</div>
                                     <button className='cart-item-btn' id={item.name} onClick={inrement}>+</button>
 
                                 </div>
@@ -94,7 +94,7 @@ const Cart = ()=>{
                         </div>
                     )
                 })}
-                <p className='cart-total'>Total: ${cartItems.totalPrice}</p>
+                <p className='cart-total' data-testid='cart-total'>Total: ${cartItems.totalPrice}</p>
                 <button className='checkout-btn' onClick={checkout}>Proceed to Checkout</button>
                 <Link to='/shop'><button className='btn-to-shop'>Back to Shop</button></Link>
             </div>
